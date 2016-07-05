@@ -1,0 +1,7 @@
+sapagination.content:
+  path: '/sapag'
+  defaults:
+    _controller: '\Drupal\sapagination\Controller\sapaginationController::content'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
