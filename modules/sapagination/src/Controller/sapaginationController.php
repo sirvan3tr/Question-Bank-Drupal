@@ -30,7 +30,7 @@ class sapaginationController extends ControllerBase {
     );
   }
 
-  // this is to do a simple count of views
+  // TBF, count through here or JS via views
   public function count() {
     $entities = entity_load_multiple('node', array(1, 2));
     $count = 0;

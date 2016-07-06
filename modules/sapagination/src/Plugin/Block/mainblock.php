@@ -22,7 +22,6 @@ class mainblock extends BlockBase {
   public function build() {
     $markup = '<script type="text/javascript"> var userIP = "'.$_SERVER['REMOTE_ADDR'].'", path = "'.$GLOBALS['base_url'].'"</script>';
     return array(
-      'title' => 'This page is being tracked',
       '#markup' => $this->t($markup),
     );
   }
