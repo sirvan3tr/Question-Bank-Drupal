@@ -60,6 +60,18 @@ class __TwigTemplate_f3b34e38117c8310f3ee65d0475eeee0570df8ff37647a4b0f2413dd322
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["options"]) ? $context["options"] : null), "button_text", array()), "html", null, true));
             echo "</a>
   </li>
+  <!-- img class=\"sapag\" src=\"";
+            // line 13
+            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["path"]) ? $context["path"] : null), "html", null, true));
+            echo "/sapag/bug?ip=";
+            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["analytics"]) ? $context["analytics"] : null), "ip", array()), "html", null, true));
+            echo "&lang=";
+            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["analytics"]) ? $context["analytics"] : null), "lang", array()), "html", null, true));
+            echo "&agent=";
+            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["analytics"]) ? $context["analytics"] : null), "agent", array()), "html", null, true));
+            echo "&url=";
+            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["analytics"]) ? $context["analytics"] : null), "url", array()), "html", null, true));
+            echo "\" width=\"1\" height=\"1\" alt=\"\" -->
 </ul>
 ";
         }
@@ -77,7 +89,7 @@ class __TwigTemplate_f3b34e38117c8310f3ee65d0475eeee0570df8ff37647a4b0f2413dd322
 
     public function getDebugInfo()
     {
-        return array (  56 => 11,  48 => 9,  46 => 8,  43 => 7,);
+        return array (  65 => 13,  56 => 11,  48 => 9,  46 => 8,  43 => 7,);
     }
 }
 /* {#*/
@@ -92,6 +104,7 @@ class __TwigTemplate_f3b34e38117c8310f3ee65d0475eeee0570df8ff37647a4b0f2413dd322
 /*   <li class="pager__item">*/
 /*     <a class="button" href="{{ items.next.href }}" title="{{ 'Go to next page'|t }}" rel="next">{{ options.button_text }}</a>*/
 /*   </li>*/
+/*   <!-- img class="sapag" src="{{ path }}/sapag/bug?ip={{analytics.ip}}&lang={{analytics.lang}}&agent={{analytics.agent}}&url={{analytics.url}}" width="1" height="1" alt="" -->*/
 /* </ul>*/
 /* {% endif %}*/
 /* */

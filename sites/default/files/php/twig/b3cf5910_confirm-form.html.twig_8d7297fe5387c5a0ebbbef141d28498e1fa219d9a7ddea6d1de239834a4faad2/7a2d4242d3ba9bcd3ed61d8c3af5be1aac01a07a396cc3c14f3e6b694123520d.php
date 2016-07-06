@@ -1,7 +1,7 @@
 <?php
 
-/* {# inline_template_start #}<div class="block-filter-text-source">{{ label }}</div> */
-class __TwigTemplate_dc071b48c9599e8f738d091a25fcb216f054a4c232faea5afab70ae80b9f1590 extends Twig_Template
+/* core/themes/classy/templates/form/confirm-form.html.twig */
+class __TwigTemplate_abf62efd5757d1e0e6dc2e09e5f0bda61840306485a7021bab5f981807e17a0a extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -39,15 +39,15 @@ class __TwigTemplate_dc071b48c9599e8f738d091a25fcb216f054a4c232faea5afab70ae80b9
             throw $e;
         }
 
-        // line 1
-        echo "<div class=\"block-filter-text-source\">";
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["label"]) ? $context["label"] : null), "html", null, true));
-        echo "</div>";
+        // line 13
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["form"]) ? $context["form"] : null), "html", null, true));
+        echo "
+";
     }
 
     public function getTemplateName()
     {
-        return "{# inline_template_start #}<div class=\"block-filter-text-source\">{{ label }}</div>";
+        return "core/themes/classy/templates/form/confirm-form.html.twig";
     }
 
     public function isTraitable()
@@ -57,7 +57,20 @@ class __TwigTemplate_dc071b48c9599e8f738d091a25fcb216f054a4c232faea5afab70ae80b9
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  43 => 13,);
     }
 }
-/* {# inline_template_start #}<div class="block-filter-text-source">{{ label }}</div>*/
+/* {#*/
+/* /***/
+/*  * @file*/
+/*  * Theme override for confirm form.*/
+/*  **/
+/*  * By default this does not alter the appearance of a form at all,*/
+/*  * but is provided as a convenience for themers.*/
+/*  **/
+/*  * Available variables:*/
+/*  * - form: The confirm form.*/
+/*  *//* */
+/* #}*/
+/* {{ form }}*/
+/* */

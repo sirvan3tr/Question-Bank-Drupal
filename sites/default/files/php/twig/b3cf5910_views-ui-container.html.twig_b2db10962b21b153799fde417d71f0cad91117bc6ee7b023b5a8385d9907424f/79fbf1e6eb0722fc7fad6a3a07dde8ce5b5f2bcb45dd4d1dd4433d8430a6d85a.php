@@ -1,21 +1,16 @@
 <?php
 
-/* core/themes/classy/templates/field/field--text-with-summary.html.twig */
-class __TwigTemplate_180b1c33d9d657af1dbde1dbc0e60c3f16723ee98dc84bff24ed1c4e77f6dd6e extends Twig_Template
+/* core/themes/stable/templates/admin/views-ui-container.html.twig */
+class __TwigTemplate_784f156dba72f1e7dc2c454223f13737ff69eafde5c8277b982dbe6678d7384c extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("field--text.html.twig", "core/themes/classy/templates/field/field--text-with-summary.html.twig", 1);
+        $this->parent = false;
+
         $this->blocks = array(
         );
-    }
-
-    protected function doGetParent(array $context)
-    {
-        return "field--text.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -44,12 +39,18 @@ class __TwigTemplate_180b1c33d9d657af1dbde1dbc0e60c3f16723ee98dc84bff24ed1c4e77f
             throw $e;
         }
 
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        // line 11
+        echo "<div";
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["attributes"]) ? $context["attributes"] : null), "html", null, true));
+        echo ">";
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["children"]) ? $context["children"] : null), "html", null, true));
+        echo "</div>
+";
     }
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/field/field--text-with-summary.html.twig";
+        return "core/themes/stable/templates/admin/views-ui-container.html.twig";
     }
 
     public function isTraitable()
@@ -59,8 +60,18 @@ class __TwigTemplate_180b1c33d9d657af1dbde1dbc0e60c3f16723ee98dc84bff24ed1c4e77f
 
     public function getDebugInfo()
     {
-        return array (  11 => 1,);
+        return array (  43 => 11,);
     }
 }
-/* {% extends "field--text.html.twig" %}*/
+/* {#*/
+/* /***/
+/*  * @file*/
+/*  * Theme override for a generic views UI container/wrapper.*/
+/*  **/
+/*  * Available variables:*/
+/*  * - attributes: HTML attributes to apply to the container element.*/
+/*  * - children: The remaining elements such as dropbuttons and tabs.*/
+/*  *//* */
+/* #}*/
+/* <div{{ attributes }}>{{ children }}</div>*/
 /* */

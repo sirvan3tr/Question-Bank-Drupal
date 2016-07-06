@@ -23,6 +23,12 @@ function views_infinite_scroll_preprocess_views_infinite_scroll_pager(&$vars) {
     );
     $vars['items']['next']['href'] = Url::fromRoute('<current>', [], $options);
   }
+  // tbf, sort out better object type...
+  $vars['analytics']['ip'] = $_SERVER['REMOTE_ADDR'];
+  $vars['analytics']['lang'] = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+  $vars['analytics']['agent'] = $_SERVER['HTTP_USER_AGENT'];
+  $vars['analytics']['url'] = preg_replace('/[^a-zA-Z0-9_ %\[\]\.\(\)%&-]/s', '', $_SERVER['REQUEST_URI']);
+  $vars['path'] = $GLOBALS['base_url'];
   $vars['#cache']['contexts'][] = 'url.query_args';
 }
 

@@ -1,7 +1,7 @@
 <?php
 
-/* field.html.twig */
-class __TwigTemplate_5b03bca200df2d5ba1ca47d2e222b86347639abbdcd0d8d587ebad065efba4c8 extends Twig_Template
+/* core/themes/classy/templates/field/field.html.twig */
+class __TwigTemplate_df802380a76aaac6d11c956a00a5e33f069e08d4ad49070d59436a7b29d03f33 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -147,7 +147,7 @@ class __TwigTemplate_5b03bca200df2d5ba1ca47d2e222b86347639abbdcd0d8d587ebad065ef
 
     public function getTemplateName()
     {
-        return "field.html.twig";
+        return "core/themes/classy/templates/field/field.html.twig";
     }
 
     public function isTraitable()

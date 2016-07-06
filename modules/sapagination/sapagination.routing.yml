@@ -1,7 +1,23 @@
-sapagination.content:
+sapagination.bug:
+  path: '/sapag/bug'
+  defaults:
+    _controller: '\Drupal\sapagination\Controller\sapaginationController::bug'
+    _title: 'Submitting a page view'
+  requirements:
+    _permission: 'access content'
+
+sapagination.count:
+  path: '/sapag/count'
+  defaults:
+    _controller: '\Drupal\sapagination\Controller\sapaginationController::count'
+    _title: 'Analyse analytics'
+  requirements:
+    _permission: 'access content'
+
+sapagination.pag:
   path: '/sapag'
   defaults:
-    _controller: '\Drupal\sapagination\Controller\sapaginationController::content'
-    _title: 'Hello World'
+    _controller: '\Drupal\sapagination\Controller\sapaginationController::pag'
+    _title: 'Analyse analytics'
   requirements:
     _permission: 'access content'
